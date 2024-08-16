@@ -1,40 +1,60 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Salud y Bienestar</title><link rel="stylesheet" href="estilo.css"><style>/* Estilos personalizados para el icono del chatbot */#chatbot-icon-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background-color: #ff5722;
-            border-radius: 50%;
-            padding: 15px;
-            box-shadow: 0px4px10pxrgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud y Bienestar</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="background: url('estilo\ de\ vida.jpg') no-repeat center center fixed; background-size: cover;">
+    <header>
+        <h1>Salud y Bienestar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        #chatbot-icon-container:hover {
-            transform: scale(1.1);
-        }
+    <main>
+        <section class="intro">
+            <h2>Bienvenido a Salud y Bienestar</h2>
+            <p>Tu fuente confiable de información sobre salud y bienestar.</p>
+        </section>
 
-        #chatbot-icon {
-            width: 40px;
-            height: 40px;
-        }
-    </style></head><body style="background: url('estilo de vida.jpg') no-repeat center center fixed; background-size: cover;"><header><h1>Salud y Bienestar</h1><nav><ul><li><ahref="index.html">Inicio</a></li><li><ahref="sobre-nosotros.html">Sobre Nosotros</a></li><li><ahref="servicios.html">Servicios</a></li><li><ahref="contacto.html">Contáctenos</a></li></ul></nav></header><main><section class="intro"><h2>Bienvenido a Salud y Bienestar</h2><p>Tu fuente confiable de información sobre salud y bienestar.</p></section><section class="concepts"><h2>Nuestros Conceptos Clave</h2><ul><li>Alimentación Saludable</li><li>Ejercicio Regular</li><li>Bienestar Mental</li><li>Medicina Preventiva</li><li>Estilo de Vida Sostenible</li></ul></section></main><footer><p>© 2024 Salud y Bienestar | <ahref="contacto.html">Contáctenos</a></p></footer><!-- Contenedor del icono del chatbot --><div id="chatbot-icon-container"><img id="chatbot-icon" src="chatbot-icon.png" alt="Chatbot"></div><script type="text/javascript">
+        <section class="concepts">
+            <h2>Nuestros Conceptos Clave</h2>
+            <ul>
+                <li>Alimentación Saludable</li>
+                <li>Ejercicio Regular</li>
+                <li>Bienestar Mental</li>
+                <li>Medicina Preventiva</li>
+                <li>Estilo de Vida Sostenible</li>
+            </ul>
+        </section>
+        
+     
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Salud y Bienestar | <a href="contacto.html">Contáctenos</a></p>
+    </footer>
+    <script type="text/javascript">
         (function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
             v.onload = function() {
-                window.voiceflow.chat.load({
-                    verify: { projectID: '66bf8564ff692a65d76f17f0' },
-                    url: 'https://general-runtime.voiceflow.com',
-                    versionID: 'production'
-                });
+              window.voiceflow.chat.load({
+                verify: { projectID: '66bf8564ff692a65d76f17f0' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
             }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-            v.type = "text/javascript";
-            s.parentNode.insertBefore(v, s);
-
-            // Código para abrir el chatbot al hacer clic en el iconodocument.getElementById('chatbot-icon-container').onclick = function() {
-                window.voiceflow.chat.open();
-            };
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
         })(document, 'script');
-    </script></body></html>
+      </script>
+</body>
+</html>
